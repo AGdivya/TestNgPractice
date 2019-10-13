@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--<suite thread-count="1" verbose="1" name="Suite"> -->
+<suite name="Yahoo Automation Suite">
+
+
+	<!-- Here env, browser , url , emailID are environment variables This are 
+		not test data , this we can either define here or we can define in config 
+		file -->
+	<test name="Yahoo Parameter Test">
+		<parameter name="env" value="QA" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="url" value="https://login.yahoo.com/" />
+		<parameter name="emailId" value="divya@yahoo.com" />
+		<classes>
+			<class name="com.testNG.parameter.YahooLogin" />
+		</classes>
+	</test>
+
+</suite>

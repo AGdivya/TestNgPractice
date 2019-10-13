@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<!--<suite thread-count="1" verbose="1" name="Suite">  -->
+<suite  name="Suite">
+         
+  <test name="Annotation Test">
+  
+	 <classes>
+	   <class name="testNG.practice.com.PriorityGroupingDependsOn_TestNgPRactice"/>
+	   <class name="testNG.practice.com.AnnotationsPractice"/>
+	 </classes>
+   </test>
+   
+</suite>
+
+<!-- If we run two classes in one suite then order of running is as below
+BeforeSuite_1 -- BeforeSuite_2 -- BeforeTest_1 -- BeforeTest_2     -- BC_1 -- BM_1 -- Test1 -- AM_1 -- AC_1 then 
+
+BC_2 -- BM_2 -- Test1 -- AM_2 --BM_2 -- Test2-- AM_2 -- AC_2  then
+
+AfterTest_1 --AfterTest_2 -- AfterSuite_1 -- AfterSuite_2 
+ -->

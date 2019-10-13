@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- this class is used to run multiple test cases for  multiple times to reduce number  of failure test cases -->
+<!--<suite thread-count="1" verbose="1" name="Suite"> -->
+<suite name="Retry Failed Suite">
+
+<listeners>
+<listener class-name = "com.analyzer.myTransformer" />
+ </listeners>
+	<test name="Retry Logic for MultipleTestCases">
+		<classes>
+			<class name="retryLogic.myTestsTransformerLogic" />
+		</classes>
+	</test>
+
+</suite>

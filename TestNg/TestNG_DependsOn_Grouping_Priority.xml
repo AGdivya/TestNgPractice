@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<!--<suite thread-count="1" verbose="1" name="Suite">  -->
+<suite  name="Suite">
+         
+  <test name="Annotation Test">
+  <groups>
+         <run>
+            <include name = "A" />
+            <include name = "B" />
+         </run>
+      </groups>
+	 <classes>
+	   <class name="testNG.practice.com.PriorityGroupingDependsOn_TestNgPRactice"/>
+	 </classes>
+   </test>
+   
+</suite>
